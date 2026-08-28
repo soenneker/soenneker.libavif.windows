@@ -1,0 +1,2 @@
+libavif v1.4.2 official windows-artifacts.zip
+https://github.com/AOMediaCodec/libavif/releases/tag/v1.4.2
