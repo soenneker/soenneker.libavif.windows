@@ -1,12 +1,13 @@
 using System.IO;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Soenneker.Libavif.Windows.Tests;
 
 public sealed class LibavifWindowsTests
 {
     [Test]
-    public async ValueTask Project_defines_the_expected_runtime_path()
+    public async ValueTask Project_defines_the_expected_runtime_path(CancellationToken cancellationToken)
     {
         string path = Path.Combine("Resources", "win-x64", "libavif", "avifenc.exe");
         await Assert.That(path).EndsWith("avifenc.exe");
